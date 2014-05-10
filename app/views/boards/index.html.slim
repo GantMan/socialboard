@@ -1,0 +1,31 @@
+h1 Listing boards
+
+table
+  thead
+    tr
+      th Title
+      th Subtitle
+      th Autoshow
+      th Delay
+      th Repeat
+      th Curated
+      th
+      th
+      th
+
+  tbody
+    - @boards.each do |board|
+      tr
+        td = board.title
+        td = board.subtitle
+        td = board.autoshow
+        td = board.delay
+        td = board.repeat
+        td = board.curated
+        td = link_to 'Show', board
+        td = link_to 'Edit', edit_board_path(board)
+        td = link_to 'Destroy', board, data: {:confirm => 'Are you sure?'}, :method => :delete
+
+br
+
+= link_to 'New Board', new_board_path

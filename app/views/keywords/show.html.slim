@@ -1,0 +1,15 @@
+p#notice = notice
+
+p
+  strong Text:
+  = @keyword.text
+p
+  strong Board:
+  = @keyword.board
+p
+  strong Blacklist:
+  = @keyword.blacklist
+
+= link_to 'Edit', edit_keyword_path(@keyword)
+'|
+= link_to 'Back', keywords_path

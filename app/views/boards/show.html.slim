@@ -1,0 +1,24 @@
+p#notice = notice
+
+p
+  strong Title:
+  = @board.title
+p
+  strong Subtitle:
+  = @board.subtitle
+p
+  strong Autoshow:
+  = @board.autoshow
+p
+  strong Delay:
+  = @board.delay
+p
+  strong Repeat:
+  = @board.repeat
+p
+  strong Curated:
+  = @board.curated
+
+= link_to 'Edit', edit_board_path(@board)
+'|
+= link_to 'Back', boards_path

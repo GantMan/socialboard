@@ -1,0 +1,13 @@
+= simple_form_for(@board) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :title
+    = f.input :subtitle
+    = f.input :autoshow
+    = f.input :delay
+    = f.input :repeat
+    = f.input :curated
+
+  .form-actions
+    = f.button :submit
