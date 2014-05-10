@@ -1,6 +1,10 @@
 class BoardsController < ApplicationController
   before_action :set_board, only: [:show, :edit, :update, :destroy]
 
+  def present
+    render layout: 'presentation'
+  end
+
   # GET /boards
   # GET /boards.json
   def index

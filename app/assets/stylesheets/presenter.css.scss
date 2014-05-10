@@ -1,0 +1,42 @@
+body {
+    /* IE10 Consumer Preview */ 
+  background-image: -ms-radial-gradient(center, ellipse farthest-corner, #E6E6E6 0%, #9BAB98 100%);
+
+  /* Mozilla Firefox */ 
+  background-image: -moz-radial-gradient(center, ellipse farthest-corner, #E6E6E6 0%, #9BAB98 100%);
+
+  /* Opera */ 
+  background-image: -o-radial-gradient(center, ellipse farthest-corner, #E6E6E6 0%, #9BAB98 100%);
+
+  /* Webkit (Safari/Chrome 10) */ 
+  background-image: -webkit-gradient(radial, center center, 0, center center, 497, color-stop(0, #E6E6E6), color-stop(1, #9BAB98));
+
+  /* Webkit (Chrome 11+) */ 
+  background-image: -webkit-radial-gradient(center, ellipse farthest-corner, #E6E6E6 0%, #9BAB98 100%);
+
+  /* W3C Markup, IE10 Release Preview */ 
+  background-image: radial-gradient(ellipse farthest-corner at center, #E6E6E6 0%, #9BAB98 100%);
+}
+
+.social_block {
+  vertical-align: middle;
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  min-height: 150px;
+  overflow: wrap;
+  text-shadow: 1px 1px 7px #000;
+  line-height: 1em;
+  font-family: 'Rokkitt', serif;
+  font-size: 3em;
+  color: #fff;
+
+  h1 {
+    color: #fff;
+    font-size: 5rem;
+  }
+
+  h2 {
+    color: #ddd;
+  }
+}
