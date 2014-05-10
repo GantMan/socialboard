@@ -90,3 +90,7 @@ section {
   @extend .radius;
   @extend .tiny;
 }
+
+input[type='checkbox'] {
+  margin-right: 15px;
+}
