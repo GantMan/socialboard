@@ -11,10 +11,31 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140510025340) do
+ActiveRecord::Schema.define(version: 20140510044446) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "boards", force: true do |t|
+    t.string   "title"
+    t.string   "subtitle"
+    t.boolean  "autoshow"
+    t.integer  "delay"
+    t.boolean  "repeat"
+    t.boolean  "curated"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "keywords", force: true do |t|
+    t.string   "text"
+    t.integer  "board_id"
+    t.boolean  "blacklist"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "keywords", ["board_id"], name: "index_keywords_on_board_id", using: :btree
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
