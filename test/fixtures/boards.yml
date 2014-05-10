@@ -1,3 +1,20 @@
+# == Schema Information
+#
+# Table name: boards
+#
+#  id         :integer          not null, primary key
+#  title      :string(255)
+#  subtitle   :string(255)
+#  autoshow   :boolean
+#  delay      :integer
+#  repeat     :boolean
+#  curated    :boolean
+#  created_at :datetime
+#  updated_at :datetime
+#  keywords   :text             default("[]"), not null
+#  blacklist  :text             default("[]"), not null
+#
+
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
