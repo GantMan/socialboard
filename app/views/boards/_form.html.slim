@@ -4,6 +4,8 @@
   .form-inputs
     = f.input :title
     = f.input :subtitle
+    = f.input :keywords_list
+    = f.input :blacklist_list
     = f.input :autoshow, label: "Automatically Show Images"
     = f.input :delay, label: "Delay in Seconds", collection: 5..60
     = f.input :repeat, label: "Repeat Continuously"
